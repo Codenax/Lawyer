@@ -1,0 +1,202 @@
+a:hover {
+    text-decoration: none;
+    color: $text-c-head;
+}
+a {
+    text-decoration: none;
+    color: $text-c-head;
+}
+.jb-service-card-1 {
+    .card-contain {
+        margin-top: 2rem;
+        width: 230px;
+        border: solid 0.1rem $border-p-c;
+        padding: 2rem 1rem;
+        transition: all 0.4s;
+        .icon-area {
+            display: inline-block;
+            // margin-top: 1rem;
+            padding: 1.2rem 1.2rem;
+            border: solid 0.1rem $primary-c;
+            border-bottom: none;
+            margin-bottom: 1rem;
+            i {
+                color: $primary-c;
+                font-size: 2.2rem;
+            }
+        }
+        .contain {
+            h4 {
+                font-size: 1.5rem;
+                transition: all 0.4s;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+            .read-more {
+                color: $primary-c;
+            }
+        }
+    }
+    .card-contain:hover,.card-contain.active {
+        border-color: $primary-c;
+        box-shadow: $primary-sh;
+        transition: all 0.4s;
+        h4 {
+            color: $primary-c;
+            transition: all 0.4s;
+        }
+    }
+
+}
+.about-card-7 {
+    background-color: $background-c-2;
+    width: 280px;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.4s;
+    img {
+        width: 280px;
+        height: 210px;
+    }
+
+    .name-title {
+        margin-top: 1.3rem;
+        padding-left: 1rem;
+        padding-bottom: 0.7rem;
+        text-align: left;
+        border-bottom: solid 0.1rem $border-p-c;
+        h5 {
+            font-size: 1.4rem;
+        }
+        h6 {
+            font-style: italic;
+        }
+    }
+    .contain {
+        margin-top: 1rem;
+        padding: 0 1rem;
+        padding-bottom: 0rem;
+        border-bottom: solid 0.1rem $border-p-c;
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    .icone-area {
+        margin-top: 2rem;
+        width: 100%;
+        position: relative;
+    }
+    ul {
+        float: left;
+        margin-left: 0.9rem;
+        li {
+            display: inline;
+            a {
+                color: $primary-c;
+                margin: 0rem 0.6rem;
+                display: inline-block;
+                font-size: 1.6rem;
+                text-align: center;
+                transition: all 0.5s;
+            }
+            a:hover {
+                color: $text-c-head;
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    .learn-more {
+        position: absolute;
+        color: $primary-c;
+        padding: 0.5rem 1rem;
+        border: solid 0.1rem $primary-c;
+        border-radius: 0.3rem;
+        font-weight: 700;
+        font-size: 1rem;
+        outline: 0;
+        font-family: "Montserrat", sans-serif;
+        text-decoration: none;
+        transition: all 0.5s;
+        right: 1rem;
+        top: -0.5rem;
+    }
+    .learn-more:hover {
+        text-decoration: none;
+        color: $color-wh;
+        background-color: $primary-c;
+        outline: 0;
+        transition: all 0.5s;
+    }
+}
+.about-card-7:hover {
+    transition: all 0.4s;
+    box-shadow: $card-sh;
+}
+
+
+.jb-news-card-1{
+    width: 100%;
+ .contain-area{
+     width: 100%;
+     padding: 1rem 1rem;
+     margin-top: 2rem;
+     border-bottom: solid 0.1rem $border-p-c;
+    .img-area{
+        margin-bottom: 1rem;
+        img{
+            width: 15rem;
+            height: 15rem;
+        }
+    }
+    .contain{
+        h5{
+            font-size: 1.5rem;
+            transition: all .4s;
+        }
+        .icon-area{
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            transition: all .4s;
+            i{
+                margin-right: .5rem;
+                transition: all .4s;
+            }
+           .date{
+               float: left;
+           } 
+           .comment{
+               margin-left: 8rem;
+           }
+        }
+        .p-text{
+            height: 8rem;
+            overflow: hidden;
+           text-align: justify;
+            p{
+                font-weight: 500;
+                font-size: 1.4rem;
+              
+            }
+           
+        }
+        strong{
+           font-size: 1.4rem; 
+           transition: all .4s;
+        }
+    }
+ }  
+ .contain-area:hover{
+     h5,i,strong{
+        color: $primary-c;
+        transition: all .4s;
+     }
+ } 
+}

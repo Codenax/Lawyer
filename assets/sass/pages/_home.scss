@@ -1,0 +1,115 @@
+.section {
+    padding: 5rem 0;
+}
+.home-top-banner {
+    background-image: linear-gradient(rgba(122, 122, 122, 0.356), rgba(0, 0, 0, 0.247)),
+        url(../images/background/lawtear.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //height: 90vh;
+    width: 100%;
+    padding: 14rem 0;
+    .hero-text-box {
+        padding: 0rem 2rem;
+        color: #fff;
+    }
+}
+
+.why-choose-us {
+    background-color: $background-c-2;
+    padding: 0 0 !important;
+    p {
+        font-size: 1.3rem;
+        font-weight: 500 !important;
+    }
+    .left-contain-area {
+        background-image: linear-gradient(rgba(122, 122, 122, 0.486), rgba(0, 0, 0, 0.432)),
+            url(../images/background/lawtear.jpg);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //height: 90vh;
+        //width: 100%;
+        padding: 8rem 0rem;
+        padding-right: 2rem;
+        padding-left: 6rem;
+        color: #fff;
+        .contain-area {
+            margin-left: auto;
+            margin-right: 0rem;
+           
+        }
+    }
+    .right-contain-area {
+        padding: 3rem 0rem;
+        .contain-area {
+            padding-left: 0rem;
+    
+        }
+        .contain {
+            margin: 1rem 0rem;
+            display: inline-block;
+            .icon-area {
+                padding: 1.5rem 1.5rem;
+                border: solid 0.1rem $primary-c;
+                margin-bottom: 1rem;
+                margin-top: 0.4rem;
+                float: left;
+
+                i {
+                    color: $primary-c;
+                    font-size: 2.2rem;
+                }
+            }
+            .text-area {
+                margin-left: 6.5rem;
+                h5 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+.news-blog {
+    .heading {
+        width: auto !important;
+    }
+}
+.news-letter {
+    padding: 4rem 0;
+    background-color: $primary-c;
+    color: #fff;
+    .form-control {
+        height: 4rem;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.342);
+        border: none;
+        outline: none;
+    }
+    .form-control:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.63);
+        font-weight: 600;
+    }
+    .btn-outline-secondary {
+        height: 4rem;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        padding: 0 1rem;
+        font-weight: 600;
+        color: #fff;
+        background-color: #151821;
+        border: none;
+        outline: none;
+    }
+    .btn-outline-secondary:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}

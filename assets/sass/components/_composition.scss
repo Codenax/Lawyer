@@ -1,0 +1,211 @@
+.section {
+  .heading {
+    width: 80%;
+    border-bottom: solid 0.1rem $primary-c;
+    h3 {
+      letter-spacing: 0.1rem;
+    }
+  }
+  .heading-2{
+    h3{
+      position: relative;
+      display: inline-block;
+    }
+    h3::after{
+      content: "";
+      position: absolute;
+      bottom: -.5rem;
+      left: 0;           
+      width: 40%;
+      border-bottom: solid .25rem $primary-c;
+      color: $primary-c;
+    }
+  }
+}
+
+.jb-time-line-1 {
+  padding: 8rem 0;
+  position: relative;
+  a.previous-button {
+    position: absolute;
+    top: 2.4rem;
+    left: -0.7rem;
+    border: solid 2px $primary-c;
+    background-color: #fff;
+    color: $primary-c;
+    border-radius: 5rem;
+    padding: 0.5rem 1rem;
+    padding-right: 1.5rem;
+    z-index: 5;
+  }
+  a.next-button {
+    position: absolute;
+    top: 2.4rem;
+    right: -0.7rem;
+    border: solid 2px $primary-c;
+    background-color: #fff;
+    color: $primary-c;
+    border-radius: 5rem;
+    padding: 0.5rem 1rem;
+    padding-left: 1.5rem;
+    z-index: 5;
+  }
+  .time-area {
+    position: relative;
+
+    a {
+      .clint-img {
+        width: 8rem;
+        height: 8rem;
+        border: solid 0.3rem $border-p-c;
+        border-radius: 7rem;
+        filter: grayscale(100%);
+        transition: all 0.5s;
+      }
+      h6 {
+        font-size: 1.4rem;
+        color: $text-c-head;
+        line-height: 0.4;
+        transition: all 0.5s;
+      }
+      p {
+        font-size: 1.3rem;
+        font-style: italic;
+        color: $text-c-head;
+        transition: all 0.5s;
+      }
+    }
+    a.active {
+      .clint-img {
+        box-shadow: $card-sh;
+        border-color: $primary-c;
+        filter: grayscale(0);
+        transition: all 0.5s;
+      }
+      h6 {
+        color: $primary-c;
+        // text-shadow: $text-sh;
+        transition: all 0.5s;
+      }
+      p {
+        color: $primary-c;
+        //text-shadow: $text-sh;
+        transition: all 0.5s;
+      }
+    }
+  }
+  .time-area::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 8.2rem;
+    width: 100%;
+    height: 1px;
+    background-color: $primary-c;
+  }
+  .tab-content {
+    .t-content {
+      p {
+        font-weight: 500;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .jb-time-line-1 {
+    padding: 5rem 0;
+    .container {
+      h2 {
+        margin-bottom: 0 !important;
+      }
+    }
+    .tab-content {
+      margin-top: 3rem !important;
+    }
+    .time-area {
+      margin-top: 2rem !important;
+    }
+    .time-area::before {
+      display: none;
+    }
+    a {
+      margin-top: 2rem !important;
+      i {
+        float: left;
+        margin-left: 30%;
+        margin-right: 1rem;
+        z-index: 5;
+      }
+    }
+  }
+  .portfolio-item .portfolio-thumb .link {
+    left: 20% !important;
+  }
+}
+
+.jb-counte-1 {
+  background-color: $background-c-2;
+  padding-top: 4rem !important;
+  .icon-area {
+    display: inline-block;
+    // margin-top: 1rem;
+    padding: 1.2rem 1.2rem;
+    border: solid 0.1rem $primary-c;
+    border-bottom: none;
+    margin-bottom: 1rem;
+    i {
+      color: $primary-c;
+      font-size: 2.2rem;
+    }
+  }
+}
+
+/* top-benner-section */
+.top-benner-section {
+  padding:  5rem 0;
+  background-image: linear-gradient(rgba(247, 224, 206, 0.247), rgba(248, 225, 206, 0.322)),
+  url(../images/background/white-grid.jpg);
+  .heading-area {
+    h2{
+      position: relative;
+      display: inline-block;
+    }
+    h2::after{
+      content: "";
+      position: absolute;
+      bottom: -.5rem;
+      left: 0;           
+      width: 30%;
+      border-bottom: solid .3rem $primary-c;
+      color: $primary-c;
+    }
+    span {
+      margin-left: 1rem;
+      text-transform: capitalize !important;
+    }
+  }
+  .page-link-area{
+    padding-top: .5rem;
+    a{
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-transform: capitalize !important;
+      i{
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-top: 1rem;
+      }
+    }
+    span{
+      margin-left: .5rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: $primary-c;
+    }
+  }
+}
+/* top-benner-section end */
